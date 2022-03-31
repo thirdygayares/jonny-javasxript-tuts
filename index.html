@@ -7,18 +7,28 @@
     <title>Document</title>
 </head>
 <body>
-    <h1>name:</h1>
-    <span id="name" style="color: red; font-size: 30px; font-weight: bold;"></span>
-    <h1>Location</h1>
-    <span id="adress" style="color: red; font-size: 30px; font-weight: bold;"></span>  
+  <form>
+    <h1>Please Input Your Name</h1>
+    <input type="text" id="name">
+    <input type = "button" onClick="enter()" Value="Click me" >
+</form>
+    <span id="Welcome"></span>
 
-    <script src="main.js">
 
-    </script>
-   
-    
 
-    
+<script>
+
+    function enter() {
+         yourname = document.getElementById("name").value;
+         name(yourname);
+    }
+
+    function name(thirdy) {
+        document.getElementById("Welcome").innerHTML = "Welcome friend " + thirdy + "!" + "<br> Have a nice day";
+    }
+
+
+ </script>   
 
 </body>
 </html>

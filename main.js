@@ -1,5 +1,8 @@
-const nickname = 'thirdy', adress = 'pasig';
+function enter() {
+    yourname = document.getElementById("name").value;
+    name(yourname);
+}
 
-document.getElementById("name").innerHTML = nickname ;
-document.getElementById("adress").innerHTML = adress ;
-
+function name(name) {
+   document.getElementById("welcome").innerHTML = name;
+}
